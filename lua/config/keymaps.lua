@@ -12,3 +12,4 @@ vim.keymap.set("n", "<leader>X", function()
     end
   end
 end, { desc = "Close others" })
+vim.keymap.set("n", "<leader>bp", 'O__import__("IPython").embed()<Esc>')
