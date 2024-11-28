@@ -1,7 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.ai.copilot",
-    "lazyvim.plugins.extras.editor.refactoring"
+    "lazyvim.plugins.extras.editor.refactoring",
+    "lazyvim.plugins.extras.util.octo"
   ],
   "news": {
     "NEWS.md": "7429"
