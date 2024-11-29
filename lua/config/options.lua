@@ -8,3 +8,6 @@ vim.opt.mouse = ""
 vim.api.nvim_create_user_command("Pr", function(opts)
   vim.cmd("Octo pr " .. (opts.args or ""))
 end, { nargs = "*" })
+vim.api.nvim_create_user_command("Review", function(opts)
+  vim.cmd("Octo review " .. (opts.args or ""))
+end, { nargs = "*" })
