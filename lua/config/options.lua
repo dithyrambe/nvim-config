@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.opt.wrap = true
 vim.opt.mouse = ""
+vim.opt.relativenumber = false
 
 vim.api.nvim_create_user_command("Pr", function(opts)
   vim.cmd("Octo pr " .. (opts.args or ""))
