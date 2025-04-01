@@ -5,5 +5,6 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "*.sql.j2",
   callback = function()
     vim.bo.filetype = "sql"
+    vim.bo.commentstring = "-- %s"
   end,
 })

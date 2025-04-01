@@ -44,7 +44,7 @@ function RunAthenaCLI()
   vim.api.nvim_set_option_value("sidescrolloff", 5, { win = 0 })
 
   -- Map 'q' to close the window
-  vim.api.nvim_buf_set_keymap(buf, "n", "q", "<cmd>close<CR>", { noremap = true, silent = true })
+  vim.api.nvim_buf_set_keymap(buf, "n", "q", "<cmd>bd<CR>", { noremap = True, silent = true })
 
   -- Command to run Athena query
   local cmd = "echo " .. vim.fn.shellescape(input) .. " | athenacli --table-format ascii -e -"
