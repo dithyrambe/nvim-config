@@ -16,6 +16,7 @@ end, { desc = "Close others" })
 -- IPython embed
 vim.keymap.set("n", "<leader>bp", 'O__import__("IPython").embed()<Esc>')
 vim.keymap.set("n", "<leader>yy", "<cmd>%y+<cr>")
+vim.keymap.set("n", "<leader>fz", "<cmd>FzfLua<cr>")
 
 function RunAthenaCLI()
   -- Get buffer content
